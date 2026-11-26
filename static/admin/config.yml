@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: pswaen/mon-site-81w.pages
+  repo: pswaen/mon-site
   branch: main
   base_url: https://mon-site-81w.pages.dev
   site_domain: https://mon-site-81w.pages.dev
