@@ -3,10 +3,10 @@
 
 backend:
   name: github
-  repo: philippe.swaen@outlook.com/mon-site          # ← à adapter
+  repo: NOM-UTILISATEUR/mon-site
   branch: main
-  base_url: https://mon-site.pages.dev     # ← à adapter (puis votre domaine)
-  site_domain: https://mon-site.pages.dev  # ← à adapter (puis votre domaine)
+  base_url: https://mon-site-81w.pages.pages.dev
+  site_domain: https://mon-site-81w.pages.pages.dev
   auth_endpoint: /api/auth
 
 locale: fr
