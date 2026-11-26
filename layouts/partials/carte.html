@@ -1,0 +1,8 @@
+<a class="card" href="{{ .RelPermalink }}">
+  {{ with .Params.image }}<img src="{{ . }}" alt="">{{ end }}
+  <div class="card-body">
+    <span class="date">{{ .Date | time.Format ":date_medium" }}</span>
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Summary | plainify | truncate 140 }}</p>
+  </div>
+</a>

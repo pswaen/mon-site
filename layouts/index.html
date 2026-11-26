@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.intro }}<p class="intro">{{ . }}</p>{{ end }}
+</section>
+
+<div class="content">{{ .Content }}</div>
+
+<section>
+  <h2>Dernières actualités</h2>
+  {{ $news := first 3 (where site.RegularPages "Section" "actualites").ByDate.Reverse }}
+  {{ if $news }}
+    <div class="cards">
+      {{ range $news }}{{ partial "carte.html" . }}{{ end }}
+    </div>
+    <p><a href="/actualites/">Toutes les actualités →</a></p>
+  {{ else }}
+    <p>Aucune actualité pour le moment.</p>
+  {{ end }}
+</section>
+{{ end }}

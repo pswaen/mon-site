@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Section "actualites" }}
+    <p class="date">{{ .Date | time.Format ":date_long" }}</p>
+  {{ end }}
+  {{ with .Params.image }}<img class="banner" src="{{ . }}" alt="">{{ end }}
+  <div class="content">{{ .Content }}</div>
+  {{ if eq .Section "actualites" }}<p><a href="/actualites/">← Retour aux actualités</a></p>{{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,7 @@
+{{ define "main" }}
+<h1>{{ if eq .Section "actualites" }}Actualités{{ else }}{{ .Title }}{{ end }}</h1>
+<div class="content">{{ .Content }}</div>
+<div class="cards">
+  {{ range .Pages.ByDate.Reverse }}{{ partial "carte.html" . }}{{ end }}
+</div>
+{{ end }}

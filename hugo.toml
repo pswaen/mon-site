@@ -1,0 +1,21 @@
+baseURL = "https://phs.pages.dev/"
+languageCode = "fr-be"
+title = "PC Help Solution"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Actualités"
+    url = "/actualites/"
+    weight = 2
+  [[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3

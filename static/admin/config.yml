@@ -1,0 +1,45 @@
+# Pour tester en local : décommentez la ligne suivante et lancez "npx decap-server"
+# local_backend: true
+
+backend:
+  name: github
+  repo: philippe.swaen@outlook.com/mon-site          # ← à adapter
+  branch: main
+  base_url: https://phs.pages.dev     # ← à adapter (puis votre domaine)
+  site_domain: https://mon-site.pages.dev  # ← à adapter (puis votre domaine)
+  auth_endpoint: /api/auth
+
+locale: fr
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: actualites
+    label: Actualités
+    label_singular: Actualité
+    folder: content/actualites
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Texte", name: "body", widget: "markdown" }
+
+  - name: pages
+    label: Pages
+    files:
+      - label: Accueil
+        name: accueil
+        file: content/_index.md
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Phrase d'introduction", name: "intro", widget: "string", required: false }
+          - { label: "Texte", name: "body", widget: "markdown" }
+      - label: Contact
+        name: contact
+        file: content/contact.md
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Texte", name: "body", widget: "markdown" }
