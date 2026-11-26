@@ -5,7 +5,7 @@ backend:
   name: github
   repo: philippe.swaen@outlook.com/mon-site          # ← à adapter
   branch: main
-  base_url: https://phs.pages.dev     # ← à adapter (puis votre domaine)
+  base_url: https://mon-site.pages.dev     # ← à adapter (puis votre domaine)
   site_domain: https://mon-site.pages.dev  # ← à adapter (puis votre domaine)
   auth_endpoint: /api/auth
 
