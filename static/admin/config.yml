@@ -5,8 +5,8 @@ backend:
   name: github
   repo: philippe.swaen@outlook.com/mon-site-81w.pages
   branch: main
-  base_url: https://mon-site-81w.pages.pages.dev
-  site_domain: https://mon-site-81w.pages.pages.dev
+  base_url: https://mon-site-81w.pages.dev
+  site_domain: https://mon-site-81w.pages.dev
   auth_endpoint: /api/auth
 
 locale: fr
