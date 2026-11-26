@@ -1,9 +1,8 @@
 ---
 title: Contact
 ---
+**Adresse :** Rue du Longpré, 1 à 6221 Saint-Amand
 
-**Adresse :** Rue de l'Exemple 1, 6220 Fleurus
+**E-mail :** philippe.swaen@outlook.com
 
-**E-mail :** contact@exemple.be
-
-**Téléphone :** 071 00 00 00
+**Téléphone :** 0495 19 27 85
